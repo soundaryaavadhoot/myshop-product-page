@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.my-navbar {
+    background-color: #000;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-brand {
+     color: #fff;
+}
+.navbar-brand span {
+  font-style: italic;
+}
+
+.navbar-brand:hover{
+     color: #fff;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: rgb(128, 62, 0);
+}
+
+.alert-info {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h4 {
+    color: grey;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: #000;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgb(128, 62, 0);
+    color: #fff;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+}
+
+.footer {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 2px;
+    font-weight: 600;
+
+}
+
+.footer:hover {
+    color: rgb(128, 62, 0);
+    font-weight: 600;
+}
+
+
+/* mobile */
+@media (max-width: 767px) {
+    .navbar-nav {
+        gap: 5px;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
